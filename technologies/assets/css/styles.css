@@ -1,0 +1,718 @@
+:root {
+    --headerBg: rgb(255, 255, 255);
+    --buttonBg: rgb(50, 102, 102);
+    --font: rgb(44, 44, 44);
+    --headerFont: rgb(255, 255, 255);
+    --bg: rgb(255, 255, 255);
+    --accentColor: rgb(232, 232, 232);
+    --buttonBgAccent: rgb(107, 181, 179);
+    --buttonBgHover: rgb(231, 231, 231);
+    --fontHover: rgb(0, 0, 0);
+    --buttonBgAccentHover: rgb(183, 183, 183);
+    --fontBig: 26px;
+    --fontMedium: 20px;
+    --fontSmall: 14px;
+    --boxesBg: rgb(224, 224, 224);
+    --emergency: rgb(255, 255, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    font-size: var(--fontSmall);
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 0;
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+h3 {
+    font-size: var(--fontMedium);
+    font-weight: 700;
+    color: var(--font);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--headerBg);
+    color: var(--headerFont);
+    border: rgb(255, 255, 255) 0px solid;
+
+}
+
+.top {
+    background-color: var(--headerBg);
+    color: var(--font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    border: rgb(255, 255, 255) 0px solid;
+}
+
+.logoLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 35%;
+    border: rgb(255, 255, 255) 0px solid;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.logoRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 65%;
+    border: rgb(255, 255, 255) 0px solid;
+    padding-right: 40px;
+}
+
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: var(--headerBg);
+    color: var(--headerFont);
+    z-index: 100;
+    padding: 10px 10px 10px 10px;
+    transition: 300ms ease-in-out;
+    margin-top: 0px;
+
+}
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1rem;
+    transition: 300ms ease-in-out;
+    border-radius: 5px;
+    gap: 0px;
+}
+
+.button:hover {
+
+    color: var(--fontHover);
+    background-color: var(--buttonBgHover);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.logoImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: rgb(255, 255, 255) 0px solid;
+    
+    max-height: 50px;
+    height: 40px;
+    width: auto !important;
+    object-fit: fill;
+    
+}
+
+.buttonEmergency {
+    display: inline-block;
+    background-color: rgb(255, 222, 8);
+    text-decoration: none;
+    width: 160px;
+    height: 30px;
+    margin: 0px 0px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.buttonEmergency.emergency::after,
+.buttonEmergency.emergency::before {
+    content: "CALL US 24/7";
+    position: absolute;
+    text-align: center;
+    width: 140px;
+    color: var(--font);
+    transition: all 400ms;
+    top: 8px;
+}
+
+.buttonEmergency.buttonEmergency.emergency:hover::after {
+    top: -30px;
+}
+
+.buttonEmergency.emergency::before {
+    content: "EMERGENCY";
+    text-align: center;
+    top: 30px;
+}
+
+.buttonEmergency.emergency:hover::before {
+    top: 8px;
+}
+
+
+.banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 53, 53);
+    background-image: linear-gradient(to right, rgb(163, 169, 169), rgb(51, 105, 105));
+    opacity: 0.85;
+    position: absolute;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bannerText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: var(--fontBig);
+    text-align: center;
+    text-shadow: 1px 1px 2px #878787;
+    width: 100%
+}
+
+.bannerSubtitle {
+    font-size: var(--fontMedium);
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    border: yellow 0px solid;
+}
+
+
+.callButton {
+    position: sticky;
+    top: 70px;
+    line-height: 50px;
+    font-size: var(--fontMedium);
+    color: rgb(51, 51, 51);
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 20px 0 20px;
+    background-color: var(--boxesBg);
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: var(--boxesBg) 1px solid;
+}
+
+.callButton:hover {
+    background-color: var(--buttonBgAccentHover);
+    color: var(--fontHover);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    transition: 400ms ease-in-out;
+    border: var(--buttonBgAccentHover) 1px solid;
+}
+
+
+
+
+.container1000 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mainServices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    width: 1000px;
+    height: 100%;
+    background-color: var(--headerBg);
+    color: var(--font);
+    border: rgb(1, 255, 22) 0px solid;
+    margin-bottom: 30px;
+}
+
+
+.mainServicesLeft {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    height: 100%;
+}
+
+.mainServicesRight {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainServicesPhoto {
+    border: red 0px solid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.heroSubtitle {
+    font-size: var(--fontMedium);
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    border: yellow 0px solid;
+}
+
+.text {
+    display: block;
+    line-height: 150%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.stripe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--boxesBg);
+    padding: 30px 150px 30px 150px;
+    margin-bottom: 30px;
+}
+
+.stripeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0px;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    padding: 30px 0px 10px 0px;
+}
+
+.stripeTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    font-size: var(--fontMedium);
+}
+
+.stripeIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    padding: 5px 5px 5px 5px;
+}
+
+.stripeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+}
+
+.stripeUl {
+    padding: 15px 50px 5px 50px;
+}
+
+.stripeBullets {
+    padding: 0px 50px 0px 70px;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: var(--headerFont);
+    border: rgb(255, 1, 196) 0px solid;
+    padding: 10px 10px 10px 10px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--buttonBgAccent);
+    color: var(--headerFont);
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1rem;
+
+    border-radius: 5px;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    text-align: center;
+
+    height: 50px;
+}
+
+.service p {
+    font-size: 1rem;
+    text-align: center;
+
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 100px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+}
+
+.footerBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 10px;
+    height: 100%;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+}
+
+.poweredBy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+    height: 100px;
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+
+}
+
+.poweredByLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 120px;
+    gap: 10px;
+    max-height: 50px;
+
+    background-color: var(--boxesBg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontSmall);
+    border: rgb(255, 1, 196) 0px solid;
+
+}
+
+.sticky {
+    position: fixed;
+}
+
+.link {
+    text-decoration: underline;
+
+}
+
+
+
+@media only screen and (min-width: 64.063em) {
+
+    .stickyfooter,
+    .content .stickyfooter {
+        grid-template-columns: 0 minmax(0, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .bannerText {
+        font-size: 1.4rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .bannerText {
+        font-size: 1.2rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 1rem;
+    }
+
+    .heroButton {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bannerText {
+        font-size: 1rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 0.8rem;
+    }
+
+    .heroButton {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .logoLeft {
+        padding-left: 0px;
+    }
+
+    .logoRight {
+        padding-right: 0px;
+    }
+
+    .bannerText {
+        font-size: 0.9rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 0.7rem;
+    }
+
+    .heroButton {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 435px) {
+
+    .emergency {
+        font-size: 0.8rem;
+    }
+
+    .bannerText {
+        font-size: 0.8rem;
+    }
+
+    .heroButton {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .emergency {
+        font-size: 0.7rem;
+    }
+
+    .bannerText {
+        font-size: 0.7rem;
+    }
+
+    .bannerSubtitle {
+        font-size: 0.6rem;
+    }
+
+    .heroButton {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 315px) {
+
+    .emergency {
+        font-size: 0.5rem;
+    }
+
+    .bannerText {
+        font-size: 0.4rem;
+    }
+
+    .heroButton {
+        font-size: 0.6rem;
+    }
+}
