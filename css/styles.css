@@ -729,6 +729,7 @@ img {
     position: relative;
     border: red 0px solid;
     color: var(--serviceFont);
+    margin-bottom: 10px;
 
 }
 
@@ -1538,6 +1539,11 @@ img {
         padding: 30px 10vw 30px 10vw;
 
     }
+    .services {
+        padding: 50px 20px 50px 20px;
+        gap: 10px;
+    
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1657,6 +1663,10 @@ img {
         padding: 30px 0px 30px 0px;
 
     }
+    .serviceShadow::before {
+        background: transparent;
+        
+    }
 
     .locationsBox {
         width: 70vw;
@@ -1753,10 +1763,7 @@ img {
         width: 100%;
         padding: 0px 0 0px 0;
     }
-    .serviceShadow::before {
-        background: transparent;
-        
-    }
+    
     
 
     .youtube {
