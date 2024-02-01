@@ -1546,11 +1546,12 @@ img {
 
     .callButton {
         font-size: 1.4rem;
-        border: red 0px solid;
+        border: red 1px solid;
         height: 50px;
         margin: 10px 100px 15px 100px;
         position: sticky;
         top: 70px;
+        display: block;
     }
 
     .mainServices {
