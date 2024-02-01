@@ -1922,6 +1922,12 @@ img {
     .serviceTitle {
         height: fit-content;
     }
+
+    .serviceShadow::before {
+        background: black;
+        /*z-index: -1;
+        -webkit-z-index: -1;*/
+    }
 }
 
 @media (max-width: 390px) {
