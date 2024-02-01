@@ -1532,17 +1532,7 @@ img {
 }
 
 @media (max-width: 1200px) {
-    .toggle-button::after {
-        margin: 5px;
-    }
     
-    .toggle-button::before {
-        margin: 5px;
-    }
-
-    .toggle-button {
-        gap: 0;
-    }
     .navbar a {
         font-size: 0.9rem;
         padding: 0 0 0 0;
@@ -1677,20 +1667,18 @@ img {
 
 
 @media (max-width: 900px) {
-    .toggle-button {
-        display: flex;
-    }
-
+    
     .toggle-button::after {
-        margin: 0px;
+        margin: 5px;
     }
     
     .toggle-button::before {
-        margin: 0px;
+        margin: 5px;
     }
 
     .toggle-button {
-        gap: var(--hamburger-gap);
+        gap: 0;
+        display: flex;
     }
 
     .navbar {
@@ -1850,6 +1838,12 @@ img {
 }
 
 @media (max-width: 700px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    
+    
     .callButton {
         margin: 10px 50px 15px 50px;
         display: flex;
@@ -1861,6 +1855,17 @@ img {
 }
 
 @media (max-width: 600px) {
+    .toggle-button::after {
+        margin: 0px;
+    }
+    
+    .toggle-button::before {
+        margin: 0px;
+    }
+
+    .toggle-button {
+        gap: var(--hamburger-gap);
+    }
     .logoContainer {
         width: fit-content;
         left: 9%;
