@@ -234,7 +234,7 @@ nav a {
     height: 60px;
     display: none;
     flex-direction: column;
-    /*gap: var(--hamburger-gap);*/
+    gap: var(--hamburger-gap);
     width: 40px;
     position: absolute;
     top: var(--hamburger-margin);
@@ -252,13 +252,7 @@ nav a {
 
 }
 
-.toggle-button::after {
-    margin: 5px;
-}
 
-.toggle-button::before {
-    margin: 5px;
-}
 
 .menuButton[aria-expanded="false"]::before,
 .menuButton[aria-expanded="false"]::after,
@@ -1538,7 +1532,17 @@ img {
 }
 
 @media (max-width: 1200px) {
+    .toggle-button::after {
+        margin: 5px;
+    }
+    
+    .toggle-button::before {
+        margin: 5px;
+    }
 
+    .toggle-button {
+        gap: 0;
+    }
     .navbar a {
         font-size: 0.9rem;
         padding: 0 0 0 0;
@@ -1675,6 +1679,18 @@ img {
 @media (max-width: 900px) {
     .toggle-button {
         display: flex;
+    }
+
+    .toggle-button::after {
+        margin: 0px;
+    }
+    
+    .toggle-button::before {
+        margin: 0px;
+    }
+
+    .toggle-button {
+        gap: var(--hamburger-gap);
     }
 
     .navbar {
