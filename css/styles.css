@@ -1672,7 +1672,12 @@ img {
 
 
 @media (max-width: 900px) {
-    
+    header {
+        position: fixed;
+        display: block;
+        border: rgb(244, 7, 7) 1px solid;
+        
+    }
     .toggle-button::after {
         margin: 5px;
     }
@@ -1844,6 +1849,12 @@ img {
 }
 
 @media (max-width: 700px) {
+    header {
+        position: sticky;
+        display: flex;
+        border: rgb(255, 255, 255) 0px solid;
+        
+    }
     .toggle-button {
         display: flex;
     }
