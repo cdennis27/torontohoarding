@@ -86,7 +86,7 @@ h3 {
 h1 {
     font-size: var(--fontBig);
     font-weight: 700;
-    color: var(--font);
+    color: var(--headerFont);
     border: red 1px solid;
 }
 
@@ -1513,7 +1513,7 @@ img {
         font-size: 1.4rem;
         border: red 0px solid;
         height: 50px;
-        margin: 0px 100px 0 100px;
+        margin: 10px 100px 10px 100px;
         
 
     }
