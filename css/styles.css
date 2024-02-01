@@ -794,7 +794,7 @@ img {
     position: relative;
     margin: 0px 5px 10px 5px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 
 .serviceImg:hover {
@@ -879,6 +879,7 @@ img {
     height: 100%;
     transform: perspective(10em) rotateX(25deg) scale(1, 0.25);
     filter: blur(2em);
+    z-index: 0;
 }
 
 .service p {
