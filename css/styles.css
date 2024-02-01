@@ -1590,7 +1590,7 @@ img {
     }
 
     .serviceShadow::before {
-        
+        display: hidden;
         z-index: -1;
         -webkit-z-index: -1;
     }
