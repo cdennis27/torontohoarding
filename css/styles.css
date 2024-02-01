@@ -1679,6 +1679,8 @@ img {
     .toggle-button {
         gap: 0;
         display: flex;
+        border: orange 1px solid;
+        height: 60px;
     }
 
     .navbar {
