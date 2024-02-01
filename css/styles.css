@@ -1676,6 +1676,7 @@ img {
         position: fixed;
         display: block;
         border: rgb(244, 7, 7) 1px solid;
+        -webkit-transform-origin-z: 100px;
          
     }
 
