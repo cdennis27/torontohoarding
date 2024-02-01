@@ -1807,6 +1807,10 @@ img {
         background-color: #e6e6e6;
     }
 
+    .serviceImgTitle {
+        display: none !important;
+    }
+
     .locationsBox {
         width: 90vw;
     }
