@@ -1580,7 +1580,11 @@ img {
         color: var(--font);
         border: rgb(56, 1, 255) 0px solid;
         padding: 50px 10vw 50px 10vw;
+        
+    }
 
+    .serviceShadow {
+        margin: 0 0 15px 0;
     }
 
     .service {
