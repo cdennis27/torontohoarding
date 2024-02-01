@@ -801,7 +801,7 @@ img {
     border: rgb(8, 255, 239) 1px solid;
     /*box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);*/
     position: relative;
-    margin: 0px 5px 10px 5px;
+    margin: 0px 5px 15px 5px;
     overflow: hidden;
     /*z-index: 20;*/
 }
@@ -881,7 +881,7 @@ img {
 .serviceShadow::before {
     content: "";
     position: absolute;
-    top: 36%;
+    top: 33%;
     left: 10%;
     overflow: visible;
     background: rgb(0, 0, 0);
