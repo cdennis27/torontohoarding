@@ -421,7 +421,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    display: block;
+    display: flex;
 }
 
 .round {
@@ -585,7 +585,7 @@ img {
 }
 
 .text {
-    display: block;
+    display: flex;
     line-height: 150%;
     justify-content: center;
     align-items: center;
@@ -925,7 +925,7 @@ img {
 
 .service p {
 
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
