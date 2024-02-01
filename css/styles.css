@@ -1545,6 +1545,12 @@ img {
         padding: 0px 0 0px 0;
     }
 
+    .heroSubtitle h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
     .container1100 {
         display: flex;
         width: 100%;
