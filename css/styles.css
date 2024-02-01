@@ -1676,7 +1676,12 @@ img {
         position: fixed;
         display: block;
         border: rgb(244, 7, 7) 1px solid;
-        
+         
+    }
+
+    main {
+        position: relative;
+        top: 70px;
     }
     .toggle-button::after {
         margin: 5px;
@@ -1854,6 +1859,10 @@ img {
         display: flex;
         border: rgb(255, 255, 255) 0px solid;
         
+    }
+    main {
+        position: relative;
+        top: 0px;
     }
     .toggle-button {
         display: flex;
