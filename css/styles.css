@@ -231,7 +231,7 @@ nav a {
 
 .toggle-button {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
-
+    height: 60px;
     display: none;
     flex-direction: column;
     gap: var(--hamburger-gap);
@@ -1517,8 +1517,8 @@ img {
         border: red 0px solid;
         height: 50px;
         margin: 10px 100px 15px 100px;
-        display: block;
-
+        position: sticky;
+        top: 70px;
     }
 
     .mainServices {
