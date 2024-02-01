@@ -461,7 +461,7 @@ img {
 
     border: var(--boxesBg) 0px solid;
     width: auto;
-    margin: 10px 200px 0 200px;
+    margin: 10px 200px 15px 200px;
 }
 
 .callButton:hover {
@@ -558,6 +558,7 @@ img {
     padding: 5px 0 5px 0;
     width: 100%;
     border: yellow 0px solid;
+    height: fit-content;
 }
 
 .text {
@@ -1513,7 +1514,7 @@ img {
         font-size: 1.4rem;
         border: red 0px solid;
         height: 50px;
-        margin: 10px 100px 10px 100px;
+        margin: 10px 100px 15px 100px;
         
 
     }
@@ -1777,7 +1778,7 @@ img {
 
 @media (max-width: 700px) {
     .callButton {
-        margin: 10px 50px 0 50px;
+        margin: 10px 50px 15px 50px;
     }
 
     .services {
