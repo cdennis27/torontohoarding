@@ -1516,7 +1516,7 @@ img {
         border: red 0px solid;
         height: 50px;
         margin: 10px 100px 15px 100px;
-        
+        display: block;
 
     }
 
@@ -1796,6 +1796,7 @@ img {
 @media (max-width: 700px) {
     .callButton {
         margin: 10px 50px 15px 50px;
+        display: flex;
     }
 
     .services {
