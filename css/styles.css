@@ -1601,7 +1601,7 @@ img {
     }
 
     .serviceShadow::before {
-        background: transparent !important;
+        background: transparent;
         /*z-index: -1;
         -webkit-z-index: -1;*/
     }
