@@ -1589,6 +1589,12 @@ img {
         background-color: #e6e6e6;
     }
 
+    .serviceShadow::before {
+        
+        z-index: -1;
+        -webkit-z-index: -1;
+    }
+
     .technologiesContent {
         display: flex;
         flex-direction: column;
