@@ -831,7 +831,7 @@ img {
     position: relative;
     margin: 0px 5px 15px 5px;
     overflow: hidden;
-    /*z-index: 20;*/
+    
     -webkit-transform: translate3d(0,0,0)
 }
 
@@ -919,7 +919,7 @@ img {
     height: 100%;
     transform: perspective(10em) rotateX(25deg) scale(1, 0.25);
     filter: blur(2em);
-    /*z-index: 0;*/
+    
 
 }
 
@@ -1744,8 +1744,7 @@ img {
     }
     .serviceShadow::before {
         background: transparent;
-        /*z-index: -1;
-        -webkit-z-index: -1;*/
+        
     }
     
 
@@ -1850,8 +1849,7 @@ img {
     }
     .serviceShadow::before {
         background: black;
-        /*z-index: -1;
-        -webkit-z-index: -1;*/
+        
     }
     
     
@@ -2008,8 +2006,7 @@ img {
 
     .serviceShadow::before {
         background: black;
-        /*z-index: -1;
-        -webkit-z-index: -1;*/
+        
     }
 }
 
