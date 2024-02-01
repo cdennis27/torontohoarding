@@ -34,8 +34,8 @@
 
     /* Variables for Stripe */
     --stripeGradient: linear-gradient(217deg, rgba(8, 0, 153, 0.851), rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(119, 0, 255, 0.405), rgba(179, 255, 179, 0.05) 70.71%),
-    linear-gradient(336deg, rgba(125, 0, 170, 0.834), rgba(0, 0, 255, 0) 70.71%);
+        linear-gradient(127deg, rgba(119, 0, 255, 0.405), rgba(179, 255, 179, 0.05) 70.71%),
+        linear-gradient(336deg, rgba(125, 0, 170, 0.834), rgba(0, 0, 255, 0) 70.71%);
 
 
     /* Variables for Menu Button  */
@@ -167,7 +167,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 2px;
     height: 70px;
     background-color: var(--headerBg);
     color: var(--headerFont);
@@ -269,7 +269,11 @@ nav a {
     background-color: var(--foreground);
     border-radius: 9999px;
     transform-origin: left center;
+    -webkit-transform-origin: left center;
     transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing),
+        background-color var(--animation-timing);
+    -webkit-transition: opacity var(--animation-timing), width var(--animation-timing),
         rotate var(--animation-timing), translate var(--animation-timing),
         background-color var(--animation-timing);
 }
@@ -308,6 +312,15 @@ nav a {
     x: 10;
 }
 
+.btnHome,
+.btnServices,
+.btnTechnology,
+.btnAbout,
+.btnLocations,
+.btnContact {
+    margin: 5px 0 5px 0;
+}
+
 .button:hover {
 
     color: var(--fontHover);
@@ -328,7 +341,7 @@ button:hover {
     align-items: center;
     border: rgb(255, 255, 255) 0px solid;
 
-    
+
     height: 100%;
     max-width: 70px;
     object-fit: fill;
@@ -593,13 +606,18 @@ img {
     background-image: var(--stripeGradient);
     background-size: 200% 100%;
     background-position: left;
-    
+
     animation: bg-animation 20s infinite alternate;
 }
 
 @keyframes bg-animation {
-    0% {background-position:left}
-    100% {background-position: right}
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right
+    }
 }
 
 
@@ -891,7 +909,7 @@ img {
     transform: perspective(10em) rotateX(25deg) scale(1, 0.25);
     filter: blur(2em);
     /*z-index: 0;*/
-    
+
 }
 
 .service p {
@@ -1042,6 +1060,7 @@ img {
 
 
 }
+
 .mainServicesBox {
     color: var(--font);
 }
@@ -1084,14 +1103,14 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-    
+
+
     background-color: var(--bg);
     color: var(--font);
     padding: 0px 0px 0px 0px;
-    
+
     border: rgb(255, 1, 196) 0px solid;
-    
+
 }
 
 .contactUsInfoItemIcon {
@@ -1102,13 +1121,13 @@ img {
     width: 50px;
     height: 50px;
     gap: 10px;
-    
+
     background-color: var(--bg);
     color: var(--font);
     padding: 10px 10px 10px 10px;
     font-size: var(--fontSmall);
     border: rgb(1, 196, 255) 0px solid;
-    
+
 }
 
 .phoneNumber {
@@ -1117,16 +1136,16 @@ img {
 }
 
 .contactUsInfoItemText {
-    
-    
+
+
     background-color: var(--bg);
     color: var(--font);
     padding: 10px 10px 10px 10px;
-    
+
     border: rgb(86, 255, 1) 0px solid;
     font-size: var(--fontsmall);
 
-} 
+}
 
 .underConstruction {
     display: flex;
@@ -1353,11 +1372,11 @@ img {
 .formContainer div {
     display: flex;
     flex-direction: column;
-    
 
-    
+
+
     width: 100%;
-    
+
 }
 
 .formContainer input {
@@ -1384,13 +1403,15 @@ img {
     transition: 300ms ease-in-out;
 }
 
-.servicesOptionTitle, .occupancyTitle {
+.servicesOptionTitle,
+.occupancyTitle {
     padding: 20px 0 20px 0;
 
-    
+
 }
 
-.servicesOption div, .occupancy div {
+.servicesOption div,
+.occupancy div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1404,14 +1425,16 @@ img {
 
 }
 
-.servicesOption label, .occupancy label {
+.servicesOption label,
+.occupancy label {
     border: red 0px solid;
     width: 100%;
     position: relative;
     left: 60px;
 }
 
-.servicesOption input, .occupancy input {
+.servicesOption input,
+.occupancy input {
     width: 20px;
     height: 20px;
     border-radius: 5px;
@@ -1502,9 +1525,10 @@ img {
 @media (max-width: 1750px) {
     .stripe {
         padding: 30px 10vw 30px 10vw;
-    
+
     }
 }
+
 @media (max-width: 1200px) {
 
     .navbar a {
@@ -1588,7 +1612,7 @@ img {
         color: var(--font);
         border: rgb(56, 1, 255) 0px solid;
         padding: 50px 10vw 50px 10vw;
-        
+
     }
 
     .serviceShadow {
@@ -1707,7 +1731,7 @@ img {
 
     .youtube {
         max-width: 80vw;
-        
+
     }
 
     .technologiesContent {
@@ -1755,7 +1779,7 @@ img {
         font-size: var(--fontSmall);
     }
 
-    
+
 
     .footer {
         border: orange 0px solid;
@@ -1847,7 +1871,8 @@ img {
 
     }
 
-    .servicesOption div, .occupancy div {
+    .servicesOption div,
+    .occupancy div {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -1857,15 +1882,16 @@ img {
         border: black 0px solid;
         gap: 10px;
         position: relative;
-    
-    
+
+
     }
 
     .formContainer {
         width: 100%;
     }
-    
-    .servicesOption label, .occupancy label {
+
+    .servicesOption label,
+    .occupancy label {
         border: orange 0px solid;
         width: 80%;
         padding: 0 15px 0 0;
