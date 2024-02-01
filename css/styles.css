@@ -234,7 +234,7 @@ nav a {
     height: 60px;
     display: none;
     flex-direction: column;
-    gap: var(--hamburger-gap);
+    /*gap: var(--hamburger-gap);*/
     width: 40px;
     position: absolute;
     top: var(--hamburger-margin);
@@ -250,6 +250,14 @@ nav a {
     --foreground: var(--font);
     --background: #333;
 
+}
+
+.toggle-button::after {
+    margin: 5px;
+}
+
+.toggle-button::before {
+    margin: 5px;
 }
 
 .menuButton[aria-expanded="false"]::before,
