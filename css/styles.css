@@ -87,7 +87,7 @@ h1 {
     font-size: var(--fontBig);
     font-weight: 700;
     color: var(--headerFont);
-    border: red 1px solid;
+    border: red 0px solid;
 }
 
 header {
@@ -803,7 +803,7 @@ img {
     position: relative;
     margin: 0px 5px 10px 5px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 20;
 }
 
 .serviceImg:hover {
