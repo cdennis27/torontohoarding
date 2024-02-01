@@ -1698,6 +1698,12 @@ img {
         padding: 0px 0 0px 0;
     }
 
+    .serviceShadow::before {
+        background: black;
+        /*z-index: -1;
+        -webkit-z-index: -1;*/
+    }
+
     .youtube {
         max-width: 80vw;
         
