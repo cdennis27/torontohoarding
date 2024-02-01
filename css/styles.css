@@ -789,7 +789,7 @@ img {
     object-fit: cover;
     display: flex;
     border-radius: 10px 10px 10px 10px;
-    border: rgb(8, 255, 239) 0px solid;
+    border: rgb(8, 255, 239) 1px solid;
     /*box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);*/
     position: relative;
     margin: 0px 5px 10px 5px;
