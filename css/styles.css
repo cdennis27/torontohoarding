@@ -288,11 +288,17 @@ nav a {
     pointer-events: none;
 }
 
+.toggle-button[aria-expanded="true"] {
+    border: green 0px solid;
+}
+
 
 .toggle-button[aria-expanded="true"]::before {
     rotate: 45deg;
-    width: var(--x-width);
+    
+    width: var(--x-width);  
     translate: 0 calc(var(--bar-height) / -2);
+    right: 0px;
 }
 
 .toggle-button[aria-expanded="true"]::after {
@@ -300,6 +306,7 @@ nav a {
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
     opacity: 100%;
+    right: 0px;
 }
 
 .menuButton[aria-expanded="true"] {
@@ -310,8 +317,9 @@ nav a {
 .toggle-button[aria-expanded="true"]::before,
 .toggle-button[aria-expanded="true"]::after,
 .menuButton[aria-expanded="true"] {
-    width: 50px;
+    width: 48px;
     x: 10;
+    
 }
 
 .btnHome,
@@ -462,7 +470,7 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 50;
+    z-index: 300;
     padding: 0 0px 0 0px;
     background-image: url("../assets/images/button4.jpg");
 
@@ -824,6 +832,7 @@ img {
     margin: 0px 5px 15px 5px;
     overflow: hidden;
     /*z-index: 20;*/
+    -webkit-transform: translate3d(0,0,0)
 }
 
 .serviceImg:hover {
@@ -1628,11 +1637,7 @@ img {
         background-color: #e6e6e6;
     }
 
-    .serviceShadow::before {
-        background: transparent;
-        /*z-index: -1;
-        -webkit-z-index: -1;*/
-    }
+    
 
     .technologiesContent {
         display: flex;
@@ -1679,7 +1684,7 @@ img {
     .toggle-button {
         gap: 0;
         display: flex;
-        border: orange 1px solid;
+        border: orange 0px solid;
         height: 60px;
     }
 
@@ -1737,12 +1742,12 @@ img {
         width: 100%;
         padding: 0px 0 0px 0;
     }
-
     .serviceShadow::before {
-        background: black;
+        background: transparent;
         /*z-index: -1;
         -webkit-z-index: -1;*/
     }
+    
 
     .youtube {
         max-width: 80vw;
@@ -1843,7 +1848,11 @@ img {
     .toggle-button {
         display: flex;
     }
-
+    .serviceShadow::before {
+        background: black;
+        /*z-index: -1;
+        -webkit-z-index: -1;*/
+    }
     
     
     .callButton {
@@ -1857,6 +1866,8 @@ img {
 }
 
 @media (max-width: 600px) {
+    
+    
     .toggle-button::after {
         margin: 0px;
     }
