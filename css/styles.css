@@ -1580,7 +1580,7 @@ img {
     }
 
     .heroSubtitle {
-        font-size: 1.2rem;
+        font-size: var(--fontMedium);
         text-align: center;
         justify-items: center;
         align-items: center;
