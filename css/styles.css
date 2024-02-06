@@ -429,13 +429,18 @@ img {
     margin: 0 0 20px 0;
 }
 
+.bannerTitle {
+    font-size: 2.8rem;
+
+}
+
 .bannerText {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 70px;
+    top: 100px;
     color: var(--bannerTitle);
     font-size: var(--fontBig);
     text-align: center;
