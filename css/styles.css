@@ -1515,7 +1515,39 @@ img {
     border-radius: 0;
 }
 
+.detailsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 30px 10px 50px 10px;
+    font-size: var(--fontBig);
+    border: rgb(255, 1, 196) 0px solid;
+}
 
+.detailsSubtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background-color: var(--bg);
+    color: var(--font);
+    padding: 10px 10px 10px 10px;
+    font-size: var(--fontMedium);
+    border: rgb(255, 1, 196) 0px solid;
+}
+
+.detailsContainer ol {
+    border:rgb(0, 150, 12) 0px solid;
+    margin: 0 15px 0 15px;
+    padding: 0px 0 10px 0;
+}
 
 
 
