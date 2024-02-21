@@ -2,6 +2,7 @@
     --headerBg: rgb(255, 255, 255);
     --buttonBg: rgb(50, 102, 102);
     --font: rgb(51, 51, 51);
+    --fontAccent: rgb(0, 187, 134);
     --headerFont: rgb(255, 255, 255);
     --bg: rgb(255, 255, 255);
     --accentColor: rgb(232, 232, 232);
@@ -601,9 +602,9 @@ img {
 .liText {
     color: var(--font);
 
-
-
 }
+
+
 
 
 .stripe {
@@ -1595,6 +1596,14 @@ img {
 .hidden {
     display: none;
 
+}
+
+.accentText {
+    color: var(--fontAccent);
+}
+
+.dotAccent::marker {
+    color: var(--fontAccent);
 }
 
 
