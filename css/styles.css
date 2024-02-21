@@ -1602,7 +1602,7 @@ img {
     color: var(--fontAccent);
 }
 
-.dotAccent::marker {
+.markerAccent::marker {
     color: var(--fontAccent);
 }
 
