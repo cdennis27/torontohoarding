@@ -13,6 +13,10 @@ const address = document.getElementById('address')
 const phone = document.getElementById('phone')
 const timeReach = document.getElementById('timeReach')
 var ServicesItem = document.getElementsByClassName('servicesItem')
+const urgency = document.getElementById('urgency')
+const buildingType = document.getElementById('buildingType')
+const propertyClass = document.getElementById('propertyClass')
+const occupancy = document.querySelector("input[name='occupancy']:checked")
 var servicesList;
 var servicesOption = [];
 
@@ -48,7 +52,7 @@ toggleButton.addEventListener('click', () => {
 
 function sendMail() {
 
-    console.log("email info" + name.value, email.value, address.value, message.value, phone.value, servicesOption.value)
+    console.log("email info: " + name.value, email.value, address.value, message.value, phone.value, servicesOption.value, "urgency: " + urgency.value, buildingType.value, propertyClass.value, "occupancy: " + occupancy.value)
 
 
     for (var i = 0; i < ServicesItem.length; i++) {
@@ -110,6 +114,10 @@ function sendMail() {
         phone: phone.value,
         timeReach: timeReach.value,
         servicesList: servicesList,
+        urgency: urgency.value,
+        buildingType: buildingType.value,
+        propertyClass: propertyClass.value,
+        occupancy: occupancy.value,
 
         message: message.value
 
