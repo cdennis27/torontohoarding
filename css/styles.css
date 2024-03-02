@@ -1495,7 +1495,7 @@ img {
     gap: 10px;
     background-color: var(--bg);
     color: var(--font);
-    padding: 30px 30px 50px 30px;
+    padding: 10px 20px 30px 20px;
     font-size: var(--fontBig);
     border: rgb(255, 1, 196) 0px solid;
 }
