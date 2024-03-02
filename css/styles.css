@@ -25,7 +25,7 @@
     --serviceButtonBackground: rgb(170, 252, 255);
     --serviceButtonFont: rgb(26, 26, 26);
 
-    --modalBg: rgba(0, 0, 0, 0.302);
+    --modalBg: rgba(35, 27, 27, 0.302);
     --modalButtons: rgba(255, 255, 255, 0.908);
     --bannerTitle: rgba(255, 255, 255);
     --bannerSubtitle: rgb(210, 199, 253);
@@ -1542,6 +1542,15 @@ img {
     border-radius: 15px;
 }
 
+.locationsPhoto {
+    border: red 0px solid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
 
 .footerEmailIcon {
     display: flex;
@@ -1924,7 +1933,20 @@ img {
         font-size: var(--fontSmall);
     }
 
+    .locationsPhoto {
+        border: red 0px solid;
+        height: 500px;
+        width: 94vw;
+        object-fit: cover;
+        display: flex;
+    }
 
+    .detailBox2, .detailBox4 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
 
     .footer {
         border: orange 0px solid;
