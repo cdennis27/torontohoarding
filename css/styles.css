@@ -1791,7 +1791,13 @@ img {
     .technologiesBlock {
         padding: 0px 5vw 30px 5vw;
     }
-
+    .locationsPhoto {
+        border: red 0px solid;
+        height: 500px;
+        width: 80vw;
+        object-fit: cover;
+        display: flex;
+    }
 
 }
 
@@ -2018,6 +2024,24 @@ img {
     }
 }
 
+@media (max-width: 750px) {
+.callButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        font-size: 1.2rem;
+        border: red 0px solid;
+        
+        width: auto;
+        
+        padding: 10px 5px 10px 5px;
+        line-height: 1.4rem;
+
+    }
+
+
+}
+
 @media (max-width: 600px) {
     
     
@@ -2163,6 +2187,14 @@ img {
         background: black;
         
     }
+
+    .locationsPhoto {
+        border: red 0px solid;
+        height: 350px;
+        width: 94vw;
+        object-fit: cover;
+        display: flex;
+    }
 }
 
 @media (max-width: 390px) {
@@ -2208,6 +2240,14 @@ img {
         border: red 0px solid;
         height: 40px;
 
+    }
+
+    .locationsPhoto {
+        border: red 0px solid;
+        height: 300px;
+        width: 94vw;
+        object-fit: cover;
+        display: flex;
     }
 
 
