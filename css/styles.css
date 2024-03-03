@@ -1520,6 +1520,12 @@ img {
     padding: 10px 0 10px 0;
 }
 
+.detailsContainer ol {
+    border:rgb(0, 150, 12) 0px solid;
+    margin: 0 15px 0 15px;
+    padding: 10px 0 10px 0;
+}
+
 .detailsContainer p {
     border:rgb(0, 150, 12) 0px solid;
     margin: 0 0 0 0;
