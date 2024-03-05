@@ -2244,7 +2244,9 @@ img {
     .serviceButton {
         font-size: 1.0rem;
         border: red 0px solid;
+        right: 25%;
         height: 40px;
+        width: 50%;
 
     }
 
