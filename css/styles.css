@@ -1557,6 +1557,11 @@ img {
 
 }
 
+.photoWind {
+    height: 400px;
+    border: greenyellow 0px solid;
+}
+
 
 .footerEmailIcon {
     display: flex;
@@ -1651,6 +1656,17 @@ img {
 .strongAccentColor {
     font-weight: 700;
     color: var(--fontAccent);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    
+
 }
 
 
