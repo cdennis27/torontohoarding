@@ -1665,7 +1665,7 @@ img {
     align-items: center;
     width: 100%;
     gap: 10px;
-    
+
 
 }
 
@@ -2090,7 +2090,7 @@ img {
     }
 
     .bannerText {
-        top: 60px;
+        top: 20px;
         font-size: .8rem;
     }
 
@@ -2170,7 +2170,7 @@ img {
     }
 
     .bannerText {
-        top: 40px;
+        top: 20px;
         font-size: .8rem;
     }
 
@@ -2240,7 +2240,7 @@ img {
     }
 
     .bannerText {
-        top: 40px;
+        top: 5px;
         font-size: .8rem;
     }
 
