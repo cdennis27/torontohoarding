@@ -650,6 +650,35 @@ img {
     padding: 30px 0px 30px 0px;
 }
 
+.stripeList {
+    padding: 15px 5px 15px 5px;
+    border: orange 0px solid;
+}
+
+.liLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    padding: 0px 0px 0px 0px;
+    border: green 0px solid;
+    
+
+}
+
+.liIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 0px 5px 2px 0px;
+    font-size: var(--fontMedium);
+
+}
+
 .stripeTitle {
     display: flex;
     flex-direction: column;
@@ -1628,7 +1657,9 @@ img {
 
 
 
-
+.heading {
+    scroll-margin-top: 175px;
+  }
 
 .sticky {
     position: fixed;
@@ -2197,7 +2228,7 @@ img {
     }
 
     .stripeList {
-        padding: 15px 20px 15px 35px;
+        padding: 15px 5px 15px 5px;
         border: orange 0px solid;
     }
 
