@@ -660,8 +660,8 @@ img {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    width: 100%;
-    margin: 10px 0 5px 0;
+    width: fit-content;
+    margin: 10px 50px 5px 50px;
     padding: 0px 0px 0px 0px;
     border: green 0px solid;
     
@@ -2074,6 +2074,15 @@ img {
 
     .services {
         padding: 0 5px 0 5px;
+    }
+
+    .liLine {
+        
+        margin: 10px 0 5px 10px;
+        padding: 0px 0px 0px 0px;
+        border: green 0px solid;
+        width: auto;
+    
     }
 }
 
