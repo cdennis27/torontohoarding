@@ -571,7 +571,7 @@ img {
 .mainServicesPhoto {
     border: red 0px solid;
     height: 100%;
-    width: 100%;
+    max-width: 800px;
     object-fit: cover;
     display: block;
 
